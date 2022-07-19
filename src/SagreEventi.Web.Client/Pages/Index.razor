@@ -20,18 +20,9 @@
     }
     else
     {
-        <SyncEventi ForceRefreshEventCallback="RefreshListaEventi" />
+        <SyncEventi ForceRefreshEventCallback="RefreshListaEventi" CountEventi="@(ListaEventi.Count())" CountSync="@(EventiDaSincronizzare)" />
 
-        <CustomMessage CountEventi="@(ListaEventi.Count())" CountSync="@(EventiDaSincronizzare)" />
-
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-info" role="alert"><p>Numero Eventi: <b>@(ListaEventi.Count())</b></p>
-                    <p>Eventi da aggiornare: <b>@(EventiDaSincronizzare)</b></p></div>
-            </div>
-        </div>
-
-        <ElencoEventi Eventi="ListaEventi" />
+        <ElencoEventi Eventi="ListaEventi" CountEventi="@(ListaEventi.Count())" CountSync="@(EventiDaSincronizzare)" />
     }
 
     <div class="row">

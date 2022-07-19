@@ -5,8 +5,9 @@ namespace SagreEventi.Web.Client.Components;
 
 public partial class SyncEventi : ComponentBase
 {
-    [Parameter]
-    public EventCallback ForceRefreshEventCallback { get; set; }
+    [Parameter] public EventCallback ForceRefreshEventCallback { get; set; }
+    [Parameter] public int CountEventi { get; set; }
+    [Parameter] public int CountSync { get; set; }
 
     public bool onLine { get; set; }
     public bool IsBusy { get; set; }
