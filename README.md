@@ -26,7 +26,7 @@ Application that keeps track of food and wine festivals and events reported by u
 Clone the project
 
 ```bash
-  git clone https://github.com/AepServerNet/SegnalaSagraEvento.git
+  git clone https://github.com/AepServerNet/SagreEventi.SQLServer.git
 ```
 
 Go to the project directory
